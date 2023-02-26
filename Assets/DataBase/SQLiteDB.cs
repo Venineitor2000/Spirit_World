@@ -36,20 +36,14 @@ public class SQLiteDB : MonoBehaviour
             GuardarPartida();
             
         }
-        if (Input.GetKeyDown(KeyCode.Alpha9))
-        {
-            GuardarPartida();
-            CargarPartida(dbName);
-        }
-            if (Input.GetKeyDown(KeyCode.Alpha0))
-            CargarPartida(dbName);
+        
+            
 
         if (Input.GetKeyDown(KeyCode.Alpha1))
             GenerarReporte("SELECT * FROM spirit ORDER BY fecha ASC;", "Player");
         if (Input.GetKeyDown(KeyCode.Alpha2))
                 GenerarReporte("SELECT * FROM spirit ORDER BY fecha ASC;", "AI");
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-            GuardarBackUp();
+        
     }
 
 

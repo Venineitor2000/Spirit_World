@@ -35,7 +35,7 @@ public class Player : ControladorEspiritu
         if (Input.GetKeyDown(KeyCode.Space))
         {
             GetComponent<HabilidadActiva>().Execute();
-            Debug.Log("hola");
+            
         }
 
         //Hasta aca es lo temproal
@@ -68,7 +68,7 @@ public class Player : ControladorEspiritu
                         //Establecer animacion
                         animatorAnimaciones.SetTrigger(Animaciones.Run.ToString());
                         animatorAnimaciones.SetFloat("RunMultiplier", verticalAxis);
-                        //Realizar movimiento
+                        
                         
                     }
 

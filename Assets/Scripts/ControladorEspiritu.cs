@@ -19,7 +19,7 @@ using UnityEngine;
         Atack
     }
 
-    //TEMPORAL, DESPUES BORRAR Y IRIA EN ESPECIE ESTO
+    
     public float speedWalk;
     public float speedRun;
     
@@ -67,6 +67,11 @@ using UnityEngine;
     {
         return actualSpirit;
     }   
+
+    public bool GetIsDead()
+    {
+        return isDead;
+    }
 
     public int GetHp()
     {
